@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Request a detailed quote for Elite Care Co. services. Customize your care plan to fit your home and lifestyle.">
+    <title>Get a Quote | Elite Care Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Elite <span>Care Co.</span></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#why-us">Why Choose Us</a></li>
+                    <li><a href="quote.html" class="btn btn-primary active">Get a Quote</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header quote-header">
+        <div class="hero-overlay"></div>
+        <div class="container page-header-content">
+            <h1 class="animate-fade-up">Request a Service Inquiry</h1>
+            <p class="animate-fade-up delay-1">Tell us about your home, and we'll tailor the perfect clean for you.</p>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section class="section quote-section">
+        <div class="container">
+            <form class="detailed-quote-form animate-fade-up">
+
+                <!-- Personal Info -->
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="first-name">First Name*</label>
+                        <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group half">
+                        <label for="last-name">Last Name*</label>
+                        <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="postal-code">Postal Code*</label>
+                        <input type="text" id="postal-code" name="postal_code"
+                            placeholder="Postal Code (where cleaning services are needed)" required>
+                    </div>
+                    <div class="form-group half">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group half">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder="Street Address">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="apartment">Apartment No</label>
+                        <input type="text" id="apartment" name="apartment" placeholder="Apartment No">
+                    </div>
+                    <div class="form-group half">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="City">
+                    </div>
+                </div>
+
+                <!-- Dropdowns -->
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="province">Province</label>
+                        <select id="province" name="province">
+                            <option value="">Please Select a Province</option>
+                            <option value="ON">Ontario</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="AB">Alberta</option>
+                            <option value="QC">Quebec</option>
+                            <!-- Add others as needed -->
+                        </select>
+                    </div>
+                    <div class="form-group half">
+                        <label for="home-type">Type of Home</label>
+                        <select id="home-type" name="home_type">
+                            <option value="">Select Option</option>
+                            <option value="House">House</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Condo">Condo</option>
+                            <option value="Townhome">Townhome</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="home-size">Home Size</label>
+                        <select id="home-size" name="home_size">
+                            <option value="">Select Option</option>
+                            <option value="Under 1000 sq. ft.">Under 1000 sq. ft.</option>
+                            <option value="1001 - 1500 sq. ft.">1001 - 1500 sq. ft.</option>
+                            <option value="1501 - 2000 sq. ft.">1501 - 2000 sq. ft.</option>
+                            <option value="2001 - 2500 sq. ft.">2001 - 2500 sq. ft.</option>
+                            <option value="Over 2500 sq. ft.">Over 2500 sq. ft.</option>
+                        </select>
+                    </div>
+                    <div class="form-group half">
+                        <label for="bedrooms">Number of Bedrooms</label>
+                        <select id="bedrooms" name="bedrooms">
+                            <option value="">Select Option</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5+">5+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half">
+                        <label for="bathrooms">Number of Bathrooms</label>
+                        <select id="bathrooms" name="bathrooms">
+                            <option value="">Select Option</option>
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3+">3+</option>
+                        </select>
+                    </div>
+                    <div class="form-group half">
+                        <label for="cleaning-type">Type of Cleaning</label>
+                        <select id="cleaning-type" name="cleaning_type">
+                            <option value="">Select Option</option>
+                            <option value="Weekly">Weekly</option>
+                            <option value="Bi-Weekly">Bi-Weekly</option>
+                            <option value="Monthly">Monthly</option>
+                            <option value="One-Time">One-Time</option>
+                            <option value="Move-In/Out">Move-In/Out</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group full">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit" class="btn btn-gold submit-btn">Submit Service Inquiry</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Elite <span>Care Co.</span></h3>
+                <p>The elite standard in residential care.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="quote.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@elitecareco.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Elite Care Co. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
