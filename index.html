@@ -138,15 +138,15 @@
             <div class="cta-content">
                 <h2>Ready for a Spotless Home?</h2>
                 <p>Contact us today for a free estimate and experience the difference.</p>
-                <form class="contact-form">
+                <form class="contact-form" name="contact" method="POST" data-netlify="true">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <select>
+                        <select name="service">
                             <option value="">Select Service</option>
                             <option value="ongoing">Ongoing Cleaning</option>
                             <option value="deep">Deep Clean</option>
