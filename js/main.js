@@ -82,39 +82,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(styleSheet);
-
-    // Privacy Policy Modal
-    const privacyBtns = document.querySelectorAll('.privacy-btn');
-    const privacyModal = document.getElementById('privacyModal');
-    const closeModalBtn = document.querySelector('.close-modal');
-
-    if (privacyModal) {
-        privacyBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                privacyModal.style.display = 'block';
-                // Trigger reflow
-                void privacyModal.offsetWidth;
-                privacyModal.classList.add('show');
-            });
-        });
-
-        if (closeModalBtn) {
-            closeModalBtn.addEventListener('click', () => {
-                privacyModal.classList.remove('show');
-                setTimeout(() => {
-                    privacyModal.style.display = 'none';
-                }, 300);
-            });
-        }
-
-        window.addEventListener('click', (e) => {
-            if (e.target === privacyModal) {
-                privacyModal.classList.remove('show');
-                setTimeout(() => {
-                    privacyModal.style.display = 'none';
-                }, 300);
-            }
-        });
-    }
 });
